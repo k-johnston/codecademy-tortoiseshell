@@ -1,0 +1,320 @@
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: white;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+.desktop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  position: absolute;
+  display: inline-flex;
+  justify-content: space-between;
+  color: white;
+  background-color: cadetblue;
+  width: 960px;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+.header {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 1.5rem;
+}
+
+.header img {
+  padding-top: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  height: 100%;
+}
+
+.header h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+nav {
+  display: inline-flex;
+  display: space-between;
+}
+
+nav h2 {
+  display: inline;
+  font-size: 1rem;
+  padding-right: 2rem;
+  font-weight: normal;
+}
+
+.mobilenav {
+  display: none;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.banner {
+  background-image: url(./images/glasses-bg.png);
+  width: 100%;
+  height: 30rem;
+}
+
+.whitebanner {
+  background-color: white;
+  height: 6rem;
+  width: 40rem;
+  margin-top: 14rem;
+  margin-left: 32rem;
+  margin-right: 6rem;
+}
+
+.whitebanner h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+}
+
+.info {
+  display: inline-flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+  width: 60rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.icons {
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.exam, .fitting, .delivery {
+  height: 8rem;
+  width: 6rem;
+  display: inline-flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.exam p, .fitting p, .delivery p {
+  text-align: center;
+  width: 6rem;
+}
+
+.exam img {
+  width: 3.5rem;
+}
+
+.fitting img, .delivery img {
+  width: 5rem;
+}
+
+.moreinfo {
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.card {
+  width: 35%;
+}
+
+.cardheader {
+    background-color: cadetblue;
+    width: 10rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cardheader h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+.footer {
+  width: 100%;
+  background-color: azure;
+  height: 9.5rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+.footerimg {
+  padding-left: 10rem;
+  height: 1.5rem;
+  width: 5rem;
+}
+
+.footerimg img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer p {
+  margin-left: 1rem;
+  height: 1rem;
+  padding-bottom:0.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  header {
+    display: flex;
+    position: static;
+    width: 100%;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+  .banner {
+    background-image: url(./images/glasses-bg-tablet.png);
+    height: 19rem;
+    overflow: hidden;
+  }
+
+  .whitebanner {
+    height: 2.83rem;
+    width: 24rem;
+    margin-top: 5rem;
+    margin-left: 40%;
+    margin-right: 2rem;
+  }
+
+  .whitebanner h1 {
+    font-size: 1.33rem;
+    line-height: 1.33;
+    padding: 0.75rem 4rem;
+  }
+
+  .info {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .header h2 {
+    display: none;
+  }
+
+  .desktopnav {
+    display: none;
+  }
+
+  .mobilenav {
+    display: inline;
+  }
+
+  .banner {
+    background-image: url(./images/glasses-bg-mobile.png);
+    height: 14rem;
+  }
+
+  .whitebanner {
+    margin-top: 9rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .whitebanner h1 {
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .info {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 3.77rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+
+  .icons {
+    height: 26.10rem;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3.77rem;
+  }
+
+  .icons p {
+    font-size: 0.77rem;
+  }
+
+  .moreinfo {
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 0rem;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .cardheader {
+      width: 100%;
+  }
+
+  .cardheader h4 {
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 0.77rem;
+    padding-left: 5%;
+    padding-right: 15%;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+  .footerimg {
+    padding-left: 0rem;
+  }
+
+  .footer p {
+    display: none;
+    margin-left: 0rem;
+  }
+}
